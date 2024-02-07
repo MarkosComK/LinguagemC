@@ -6,7 +6,7 @@
 /*   By: marsoare <marsoare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 18:11:02 by marsoare          #+#    #+#             */
-/*   Updated: 2024/02/07 18:11:05 by marsoare         ###   ########.fr       */
+/*   Updated: 2024/02/07 18:12:37 by marsoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 int	main(void)
 {
 	int	value;
+
 	printf("insert a value: ");
 	scanf("%d", &value);
 	if (value >= 0)
