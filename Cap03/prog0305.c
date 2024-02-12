@@ -16,14 +16,16 @@ int	main(void)
 {
 	int	n1;
 	int	n2;
+	int	temp;
 
-	printf("Type first value: ");
-	scanf("%d", &n1);
-	printf("Type second value: ");
-	scanf("%d", &n2);
-	if (n1 >= n2)
-		printf("%d : %d", n2, n1);
-	else
-		printf("%d : %d", n1, n2);
+	printf("Type two values: ");
+	scanf("%d %d", &n1, &n2);
+	if (n1 > n2)
+	{
+		temp = n1;
+		n1 = n2;
+		n2 = temp;
+	}
+	printf("The Values are: %d and %d", n1, n2);
 	return (0);
 }
