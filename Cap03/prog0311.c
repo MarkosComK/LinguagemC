@@ -6,7 +6,7 @@
 /*   By: marsoare <marsoare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 16:33:49 by marsoare          #+#    #+#             */
-/*   Updated: 2024/02/13 16:41:48 by marsoare         ###   ########.fr       */
+/*   Updated: 2024/02/13 16:45:14 by marsoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ int	main(void)
 		case 'w':
 			printf("Widowed");
 			break;
+		default:
+			printf("Invalid maritial status!");
 	}
 	printf("\n");
 	return (0);
