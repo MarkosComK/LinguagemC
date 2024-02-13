@@ -6,7 +6,7 @@
 /*   By: marsoare <marsoare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 16:52:41 by marsoare          #+#    #+#             */
-/*   Updated: 2024/02/13 17:00:21 by marsoare         ###   ########.fr       */
+/*   Updated: 2024/02/13 17:05:55 by marsoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int	main(void)
 	float	tax;
 	char	sex;
 
+	tax = 0;
 	printf("Insert your salary: ");
 	scanf("%f", &salary);
 	printf("Insert your gender (M/F): ");
@@ -27,10 +28,9 @@ int	main(void)
 	switch (sex)
 	{
 		case 'm':
-			tax = 0.15;
-			break;
+			tax += 0.05;
 		case 'f':
-			tax = 0.10;
+			tax += 0.10;
 			break;
 		default:
 			printf("invalid gender!\n");
