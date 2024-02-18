@@ -6,7 +6,7 @@
 /*   By: marsoare <marsoare@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/18 22:19:35 by marsoare          #+#    #+#             */
-/*   Updated: 2024/02/18 22:30:06 by marsoare         ###   ########.fr       */
+/*   Updated: 2024/02/18 22:31:38 by marsoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,17 +19,9 @@ int	main(void)
 	printf("Type a year to check if its a leap year: ");
 	scanf("%d", &year);
 
-	if (year % 4 == 0)
-	{
-		if (!(year % 100 == 0))
-		{
-			printf("Leap year!");
-			break;
-		}
-		if (year % 400 ==0)
-			printf("Leap year!");
-		else
-			printf("Isnt a leap year");
-	}
+	if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+		printf("Leap year!");
+	else
+		printf("Isnt a leap year");
 	return (0);
 }
