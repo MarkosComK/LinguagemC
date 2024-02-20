@@ -6,7 +6,7 @@
 /*   By: marsoare <marsoare@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/18 22:33:00 by marsoare          #+#    #+#             */
-/*   Updated: 2024/02/20 16:50:48 by marsoare         ###   ########.fr       */
+/*   Updated: 2024/02/20 16:54:51 by marsoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,8 @@ int	main(void)
 		case 12:
 			printf("month %d has 31 days.\n", month);
 			break;
+		default:
+			printf("Undefined month");
 	}
 	return (0);
 }
