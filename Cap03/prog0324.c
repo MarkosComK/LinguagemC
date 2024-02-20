@@ -6,7 +6,7 @@
 /*   By: marsoare <marsoare@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/18 22:33:00 by marsoare          #+#    #+#             */
-/*   Updated: 2024/02/20 10:18:58 by marsoare         ###   ########.fr       */
+/*   Updated: 2024/02/20 10:23:07 by marsoare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,6 @@ int	main(void)
 
 
 	cpy = ft_dup(month);
-	printf("%s\n", cpy);
 	if (strcmp(cpy, "jan") == 0)
 		printf("%s has 31 days.\n", cpy);
 	else if (strcmp(cpy, "feb") == 0)
